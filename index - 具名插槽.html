@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <body-section>
+            <div class="header" slot="header">头部区域</div>
+            <div class="footer" slot="footer">底部区域</div>
+        </body-section>
+    </div>
+    <script>
+        Vue.component('body-section',{
+            template:`
+                <div>
+                    <slot name='header'></slot>
+                    <div>内容区域</div>
+                    <slot name='footer'></slot>
+                </div>
+            `
+        })
+        var app = new Vue ({
+            el:'#app'
+        })
+    </script>
+</body>
+</html>
