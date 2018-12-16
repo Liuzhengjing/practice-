@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <child content="liu"></child>
+        <child content="zhengjing"></child>
+    </div>
+    <script>
+        Vue.prototype.bus = new Vue()
+
+        Vue.component('child',{
+            data:function(){
+                return {
+                    childContent:this.content
+                }
+            },
+            props:{
+                content:String
+            },
+            template:'<div @click="handleClick">{{childContent}}</div>',
+            methods:{
+                handleClick:function(){
+                    this.bus.$emit('change',this.childContent)
+                }
+            },
+            mounted:function(){
+                var that = this
+                this.bus.$on('change',function(msg){
+                    that.childContent = msg
+                })
+            }
+        })
+        var app = new Vue ({
+            el:'#app'
+        })
+    </script>
+</body>
+</html>
