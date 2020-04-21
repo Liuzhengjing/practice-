@@ -1,0 +1,220 @@
+#box-wrapper{
+	padding: 20px 16px 12px;
+}
+#section-wrap{
+	width: 677px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*head*/
+.head{
+	width: 100%;
+}
+.head .title{
+	height: 30px;
+	margin-bottom: 14px;
+	font: 22px/30px "微软雅黑";
+}
+.head-summary{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 22px;
+}
+#head-type{
+	font: 15px/20px "微软雅黑";
+	color: rgba(0,0,0,0.3);
+	margin: 0 10px 10px 0;
+}
+.head-name{
+	font: 15px/20px "微软雅黑";
+	color: rgba(0,0,0,0.3);
+	margin: 0 10px 10px 0;
+}
+.head-from{
+	font: 15px/20px "微软雅黑";
+	margin: 0 10px 10px 0;
+	color: #576b95;
+}
+.head-time{
+	font: 15px/20px "微软雅黑";
+	margin: 0 10px 10px 0;
+	color: rgba(0,0,0,0.3);
+}
+
+/*ssection*/
+.content-wrap{
+	width: 100%;
+	height: 100%;
+}
+.content-title{
+	width: 100%;
+	height: 128px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*左侧*/
+.ct-pic{
+	width: 50%;
+	height: 128px;
+}
+.ct-head-portrait{
+	width: 68px;
+	height: 68px;
+	border-radius: 100%;
+	background: #576B95;
+	margin: 16px auto 0;
+	background-image:url(../img/pic.jpg);
+	background-size:68px 68px ;
+}
+.ct-pic p{
+	margin: 0 auto;
+}
+.ct-hp-name{
+	font: 14px/14px "微软雅黑";
+	color: rgb(102, 204, 197);
+	
+}
+/*右侧*/
+.ct-time{
+	width: 50%;
+	height: 128px;
+	box-sizing: border-box;
+	border-left: 1px solid #66CCC5;
+}
+.ct-m-border{
+	width: 100%;
+	height: 100%;
+}
+.ct-m-b-box{
+	width: 108px;
+	height: 98px;
+	border: 1px solid rgb(102, 204, 197);
+	padding: 8px 5px;
+	margin: 6px auto 0;
+}
+.ct-m-b-box p{
+	font: 14px/20px "微软雅黑";
+	color: rgb(102, 204, 197);
+	margin: 0;
+	padding: 0;
+}
+.ct-m-b-box .ct-m-b-b-time{
+	font: 30px/38px "微软雅黑";
+    color: #666;
+}
+/*前言*/
+.c-message{
+	font: 17px/28px "微软雅黑";
+	margin: 20px 10px;
+}
+/*内容部分*/
+.m-num{
+	width: 100%;
+	height: 27px;
+	font:bold 24px/25px "微软雅黑";
+	color: rgb(41, 148, 128);
+	font-style:italic;
+}
+.m-border{
+	width: 100%;
+	height: 11px;
+	background: rgb(73, 200, 149);
+	border-left: 30px solid rgb(41, 148, 128);
+	box-sizing: border-box;
+	margin-top: 14px;
+	margin-bottom: 20px;
+}
+.m-c-title{
+	box-sizing: border-box;
+	padding: 20px;
+	font:bold 20px/26px "微软雅黑";
+	color: rgb(62, 62, 62);
+}
+.m-c-main{
+	font: 17px/28px "微软雅黑";
+	color: rgb(137, 137, 137);
+	padding: 20px;
+}
+.m-c-m-pic,.m-c-m-pic2{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+.m-c-m-pic img{
+	width: 637px;
+}
+.m-c-message{
+	width: 100%;
+	height: 160px;
+	margin-bottom: 20px;
+}
+.m-c-message img{
+	width: 42px;
+	height: 31.5px;
+}
+.m-c-message p{
+	width: 100%;
+	height: 32px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	font: 18px/32px "微软雅黑";
+	color: #2b3835;
+	text-align: center;
+}
+/*列表*/
+.m-c-message-list{
+	width: 600px;
+	height: 130px;
+	margin-left: 32px;
+	margin-right: 30px;
+	padding-left: 10px;
+	border-left: 5px solid rgb(38, 198, 218);
+}
+.m-c-message-list ol{
+	font: 17px/26px "微软雅黑";
+	color: rgb(26, 149, 165);
+}
+.m-c-message-list li{
+	font: 15px/30px "微软雅黑";
+	color: rgb(84, 84, 84);
+}
+/*第二级菜单*/
+.m-n-num{
+	width: 100%;
+	height: 27px;
+	font:bold 24px/25px "微软雅黑";
+	color: rgb(26, 149, 165);
+	font-style:italic;
+}
+.m-b-border{
+	width: 100%;
+	height: 5px;
+	background: rgb(38, 198, 218);
+	border-left: 60px solid rgb(26, 149, 165);
+	box-sizing: border-box;
+	margin-top: 14px;
+	margin-bottom: 20px;
+}
+.m-c-c-title{
+	box-sizing: border-box;
+	padding: 20px;
+	font:bold 17px/27px "微软雅黑";
+	color: rgb(62, 62, 62);
+}
+.footer-color{
+   	color: rgb(178, 178, 178);
+}
+/*底部*/
+.foot{
+	width: 100%;
+	height: 32px;
+	padding-top: 15px;
+	
+}
+.f-mesg{
+	font: 15px/32px "微软雅黑";
+	color: #576b95;
+}
+    
